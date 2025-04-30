@@ -3,6 +3,7 @@
 This project implements a Visual Question Answering (VQA) system using the VQA Abstract Scenes Dataset. It takes a cartoon-style image and a natural language question about the image, and predicts an answer.
 
 🔍 **Dataset**
+
 Name: VQA Abstract Scene Dataset (v2)
 
 Source: VQA Dataset
@@ -10,6 +11,7 @@ Source: VQA Dataset
 The dataset contains synthetic scene images built from clipart objects, designed to test reasoning over structured visual scenes.
 
 🧠 **Model Architecture**
+
 The model uses a combination of:
 
 Image Encoder: Frozen ResNet50 with Global Average Pooling and a Dense Layer to extract image features (input size 224x224).
@@ -26,6 +28,7 @@ The model is trained using the Categorical Crossentropy loss and the Adam optimi
 Checkpointing is used to save model weights after each epoch.
 
 ⚙️ **Hyperparameters**
+
 Loss Function: Categorical Crossentropy
 
 Optimizer: Adam
@@ -39,11 +42,11 @@ Learning Rate: 0.00001
 📊 **Best Model Performance**
 Best Epoch: 24 (out of 30 total)
 
-Exact Match: 27.55%
+**Exact Match: 27.55%**
 
 Partial Match: 41.21%
 
-Validation Accuracy: 51.8%
+**Validation Accuracy: 51.8%**
 
 Validation Loss: 1.7154
 
