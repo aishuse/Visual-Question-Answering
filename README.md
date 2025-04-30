@@ -40,6 +40,7 @@ Batch Size: 128 (initial), 32 (for fine-tuning)
 Learning Rate: 0.00001
 
 📊 **Best Model Performance**
+
 Best Epoch: 24 (out of 30 total)
 
 **Exact Match: 27.55%**
