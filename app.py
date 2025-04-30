@@ -52,8 +52,8 @@ question = st.text_input("Ask a question about the image")
 if uploaded_file and question:
     # Read and preprocess image
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded Image", use_column_width=True)
-    
+    st.image(image, use_container_width=True)
+
     img = np.array(image)
     img_resized = cv2.resize(img, (224, 224)) / 255.0
     img_input = np.expand_dims(img_resized, axis=0)
